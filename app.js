@@ -556,3 +556,349 @@
 // alert("Yil boshidan boshlab o'tgan kunlar soni: " + kunYilBoshidan);
 
 // }
+
+// -----------------------------------------------------------------------------------------------------
+
+// 12 - Masala
+
+// sonlarni harf korinishida chiqarib beradi.
+
+
+// {
+//     function sonniHarflardaChiqar(son) {
+//         let natija = "";
+    
+//         let birliklar = son % 10; 
+//         let onliklar = Math.floor(son / 10); 
+    
+//         switch (onliklar) {
+//             case 2:
+//                 natija = "Yigirma";
+//                 break;
+//             case 3:
+//                 natija = "O'ttiz";
+//                 break;
+//             case 4:
+//                 natija = "Qirq";
+//                 break;
+//             case 5:
+//                 natija = "Ellik";
+//                 break;
+//             case 6:
+//                 natija = "Oltmish";
+//                 break;
+//             default:
+//                 natija = "Noma'lum son";
+//                 break;
+//         }
+    
+//         switch (birliklar) {
+//             case 0:
+//                 natija += "";
+//                 break;
+//             case 1:
+//                 natija += " bir";
+//                 break;
+//             case 2:
+//                 natija += " ikki";
+//                 break;
+//             case 3:
+//                 natija += " uch";
+//                 break;
+//             case 4:
+//                 natija += " to'rt";
+//                 break;
+//             case 5:
+//                 natija += " besh";
+//                 break;
+//             case 6:
+//                 natija += " olti";
+//                 break;
+//             case 7:
+//                 natija += " yetti";
+//                 break;
+//             case 8:
+//                 natija += " sakkiz";
+//                 break;
+//             case 9:
+//                 natija += " to'qqiz";
+//                 break;
+//         }
+    
+//         console.log(natija + " yosh");
+//     }
+    
+//     sonniHarflardaChiqar(20); 
+//     sonniHarflardaChiqar(24); 
+//     sonniHarflardaChiqar(37); 
+//     sonniHarflardaChiqar(53); 
+//     sonniHarflardaChiqar(68);
+    
+// }
+
+// ----------------------------------------------------------------------------------------------------
+
+// 13 - Masala
+
+// Baholarni chiqaradi.
+
+
+{
+    function bahoniHarflardaChiqish(raqamliBaho) {
+        let harfliBaho;
+      
+        switch (Math.floor(raqamliBaho)) {
+          case 5:
+            harfliBaho = "A";
+            break;
+          case 4:
+            harfliBaho = "B";
+            break;
+          case 3:
+            harfliBaho = "C";
+            break;
+          case 2:
+            harfliBaho = "D";
+            break;
+          case 1:
+          case 0:
+            harfliBaho = "F";
+            break;
+          default:
+            harfliBaho = "Noto'g'ri baho kiritildi! Iltimos, 0 dan 5 gacha bo'lgan bahoni kiriting.";
+            break;
+        }
+      
+        return harfliBaho;
+      }
+      
+      console.log(bahoniHarflardaChiqish(4.5));  
+      console.log(bahoniHarflardaChiqish(3.7));  
+      console.log(bahoniHarflardaChiqish(5.0));  
+      console.log(bahoniHarflardaChiqish(2.2)); 
+      console.log(bahoniHarflardaChiqish(0));   
+      console.log(bahoniHarflardaChiqish(6));    
+      
+}
+
+// ----------------------------------------------------------------------------------------------------------------
+
+// 14 - Masala
+
+// Kiritilgan sonni nechta masala ekanini aniqlaydi.
+
+
+// {
+//     function sonniYozuvdaChiqish(son) {
+//         let natija = "";
+      
+//         switch (Math.floor(son / 10) * 10) {
+//           case 20:
+//             natija = "yigirma";
+//             break;
+//           case 30:
+//             natija = "o'ttiz";
+//             break;
+//           case 40:
+//             natija = "qirq";
+//             break;
+//           default:
+//             natija = "";
+//             break;
+//         }
+      
+//         switch (son % 10) {
+//           case 0:
+//             natija += "";
+//             break;
+//           case 1:
+//             natija += " bir";
+//             break;
+//           case 2:
+//             natija += " ikki";
+//             break;
+//           case 3:
+//             natija += " uch";
+//             break;
+//           case 4:
+//             natija += " to'rt";
+//             break;
+//           case 5:
+//             natija += " besh";
+//             break;
+//           case 6:
+//             natija += " olti";
+//             break;
+//           case 7:
+//             natija += " yetti";
+//             break;
+//           case 8:
+//             natija += " sakkiz";
+//             break;
+//           case 9:
+//             natija += " to'qqiz";
+//             break;
+//           default:
+//             break;
+//         }
+      
+//         natija += " ta masala";
+//         return natija.trim();
+//       }
+      
+//       console.log(sonniYozuvdaChiqish(20));  
+//       console.log(sonniYozuvdaChiqish(24)); 
+//       console.log(sonniYozuvdaChiqish(37)); 
+//       console.log(sonniYozuvdaChiqish(40)); 
+      
+// }
+
+// --------------------------------------------------------------------------------------------------
+
+// 15 - Masala
+
+// 100 - 999 gacha sonlarni harflarda ifodalaydi.
+
+
+// {
+//     function sonniYozuvdaChiqish(son) {
+//         let natija = "";
+      
+//         switch (Math.floor(son / 100)) {
+//           case 1:
+//             natija = "bir yuz";
+//             break;
+//           case 2:
+//             natija = "ikki yuz";
+//             break;
+//           case 3:
+//             natija = "uch yuz";
+//             break;
+//           case 4:
+//             natija = "to'rt yuz";
+//             break;
+//           case 5:
+//             natija = "besh yuz";
+//             break;
+//           case 6:
+//             natija = "olti yuz";
+//             break;
+//           case 7:
+//             natija = "yetti yuz";
+//             break;
+//           case 8:
+//             natija = "sakkiz yuz";
+//             break;
+//           case 9:
+//             natija = "to'qqiz yuz";
+//             break;
+//           default:
+//             break;
+//         }
+      
+//         switch (Math.floor((son % 100) / 10)) {
+//           case 2:
+//             natija += " yigirma";
+//             break;
+//           case 3:
+//             natija += " o'ttiz";
+//             break;
+//           case 4:
+//             natija += " qirq";
+//             break;
+//           case 5:
+//             natija += " ellik";
+//             break;
+//           case 6:
+//             natija += " oltmish";
+//             break;
+//           case 7:
+//             natija += " yetmish";
+//             break;
+//           case 8:
+//             natija += " sakson";
+//             break;
+//           case 9:
+//             natija += " to'qson";
+//             break;
+//           case 1:
+//             switch (son % 100) {
+//               case 10:
+//                 natija += " o'n";
+//                 break;
+//               case 11:
+//                 natija += " o'n bir";
+//                 break;
+//               case 12:
+//                 natija += " o'n ikki";
+//                 break;
+//               case 13:
+//                 natija += " o'n uch";
+//                 break;
+//               case 14:
+//                 natija += " o'n to'rt";
+//                 break;
+//               case 15:
+//                 natija += " o'n besh";
+//                 break;
+//               case 16:
+//                 natija += " o'n olti";
+//                 break;
+//               case 17:
+//                 natija += " o'n yetti";
+//                 break;
+//               case 18:
+//                 natija += " o'n sakkiz";
+//                 break;
+//               case 19:
+//                 natija += " o'n to'qqiz";
+//                 break;
+//             }
+//             return natija.trim(); 
+//         }
+      
+//         switch (son % 10) {
+//           case 1:
+//             natija += " bir";
+//             break;
+//           case 2:
+//             natija += " ikki";
+//             break;
+//           case 3:
+//             natija += " uch";
+//             break;
+//           case 4:
+//             natija += " to'rt";
+//             break;
+//           case 5:
+//             natija += " besh";
+//             break;
+//           case 6:
+//             natija += " olti";
+//             break;
+//           case 7:
+//             natija += " yetti";
+//             break;
+//           case 8:
+//             natija += " sakkiz";
+//             break;
+//           case 9:
+//             natija += " to'qqiz";
+//             break;
+//           default:
+//             break;
+//         }
+      
+//         return natija.trim();
+//       }
+      
+//       console.log(sonniYozuvdaChiqish(100));  
+//       console.log(sonniYozuvdaChiqish(123));  
+//       console.log(sonniYozuvdaChiqish(456));  
+//       console.log(sonniYozuvdaChiqish(789));  
+      
+// }
+
+// 15 - Masala
+
+// 
